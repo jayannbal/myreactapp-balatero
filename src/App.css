@@ -1,10 +1,7 @@
 .App {
   text-align: center;
-  /* Add a subtle background color */
-  background-color: #f5f5f5;
-  /* Create more visual space */
+  background-color: #ecdfdf;
   padding: 50px;
-  /* Enhance font styling */
   font-family: sans-serif;
   font-weight: 300;
 }
@@ -12,7 +9,6 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  /* Smoother animation */
   animation: App-logo-spin infinite 15s linear;
 }
 
@@ -22,21 +18,45 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(14px + 2vmin); /* Slightly larger font size */
-  color: white;
+.App button:not(:last-child) {
+  margin-right: 8px;
 }
 
-.App-link {
-  color: #61dafb;
-  text-decoration: none; /* Remove underline for a cleaner look */
-  font-weight: bold; /* Add emphasis to links */
+.App .buttons-wrapper {
+  text-align: center;
+}
+
+.App .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.App button {
+  background-color: rgb(170, 82, 82);
+  color: white;
+  padding: 12px 20px;
+  transition: background-color 0.3s;
+  border: 2px solid transparent;
+  border-color: brown;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.App button:hover {
+  background-color: gray;
+  border-color: brown;
+  transform: scale(1.1);
+}
+
+.App h1 {
+  font-size: 55px;
+  padding-right: 17px;
+}
+
+.App h2 {
+  font-size: 35px;
+  padding-right: 20px;
+  color: rgb(170, 82, 82);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 @keyframes App-logo-spin {
